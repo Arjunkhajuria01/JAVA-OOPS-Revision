@@ -1,19 +1,28 @@
 // Create a Ride class with private fields: rideId, pickupLocation, dropLocation, rideTime,
 // seatsAvailable.
 //Add getters and setters.
+// part 2
+
+// Advanced:Add a method in Ride to check seat availability (return true/false).
+// Test it with multiple Ride objects.
+
 class Ride {
     private int rideId ;
     private String pickupLocation;
     private String dropLocation;
     private int rideTime;
-    private int seatsAvailale;
-
+    private int totalSeats;
+    private int seatsFilled;
+    private boolean seatAvailable;
+    private int a = 0;
     public void setRideId(int rideId){
         this.rideId = rideId;
+        a++;
     }
 
     public int getRideId(){
         return rideId;
+        s
     }
 
     public void setPickupLocation(String pickuplocation){
@@ -39,8 +48,9 @@ class Ride {
         return rideTime;
     }
 
-    public void setSeatsAvailale(int seatsAvailale){
-        this.seatsAvailale = seatsAvailale;
+    public int set
+    public void setSeatsAvailale(boolean seatsAvailale){
+
     }
     public int getSeatsAvailale(){
         return seatsAvailale;
