@@ -15,6 +15,7 @@ class Ride {
     private int seatsFilled;
     private boolean seatAvailable;
     private int a = 0;
+
     public void setRideId(int rideId){
         this.rideId = rideId;
         a++;
@@ -22,7 +23,7 @@ class Ride {
 
     public int getRideId(){
         return rideId;
-        s
+
     }
 
     public void setPickupLocation(String pickuplocation){
@@ -48,12 +49,23 @@ class Ride {
         return rideTime;
     }
 
-    public int set
-    public void setSeatsAvailale(boolean seatsAvailale){
+    public void setTotalSeats(int b){
+        this.totalSeats = b;
+    }
+    public int getTotalSeats(){
+        return totalSeats;
+    }
+    public void setSeatsAvailale(){
+    if(totalSeats > a){
+        seatAvailable = true;
 
     }
-    public int getSeatsAvailale(){
-        return seatsAvailale;
+    else{
+        seatAvailable = false;
+    }
+    }
+    public boolean getSeatsAvailale(){
+        return seatAvailable;
     }
 
 }
@@ -62,5 +74,20 @@ public class Practice3 {
     Ride r1 = new Ride();
     r1.setRideId(1012);
         System.out.println(r1.getRideId());
+
+        r1.setRideId(1090);
+        r1.setRideId(1323);
+        r1.setRideId(242);
+        r1.setPickupLocation("trikutanagar jammu");
+
+        r1.setTotalSeats(2);
+        r1.setSeatsAvailale();
+
+        System.out.println(r1.getRideId());
+        System.out.println(r1.getPickupLocation());
+        System.out.println(r1.getTotalSeats());
+        System.out.println(r1.getSeatsAvailale());
+
+
     }
 }
